@@ -1,0 +1,21 @@
+.btn_box{
+    border: 1px solid gray;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100px;
+    
+    
+}
+
+.btn{
+    width: 30%;
+    height: 50%;
+    background-color: $VeryDarkCyan;
+    color: $White;
+    padding: 10px;
+    font-size: 15px;
+    margin: 5px;
+    border-radius: 7px;
+}

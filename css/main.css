@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  background-color: hsl(185deg, 41%, 84%);
+}
+
+.title {
+  text-align: center;
+  margin: 50px;
+}
+.title h1 {
+  margin-left: 99999px;
+}
+
+.subtitle {
+  font-size: 17px;
+  color: hsl(186deg, 14%, 43%);
+  display: flex;
+}
+
+.btn_box {
+  border: 1px solid gray;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.btn {
+  width: 30%;
+  height: 50%;
+  background-color: hsl(183deg, 100%, 15%);
+  color: hsl(0deg, 0%, 100%);
+  padding: 10px;
+  font-size: 15px;
+  margin: 5px;
+  border-radius: 7px;
+}
+
+input {
+  width: 100%;
+  height: 15%;
+  padding: 10px;
+  font-size: 20px;
+  color: hsl(183deg, 100%, 15%);
+  font-weight: 800;
+}
+
+.small_text {
+  font-size: 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+#container {
+  display: flex;
+  width: 70%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px rgba(141, 140, 140, 0.247);
+  justify-content: space-around;
+}
+
+#box_two {
+  background-color: hsl(183deg, 100%, 15%);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

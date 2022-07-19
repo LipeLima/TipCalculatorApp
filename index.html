@@ -5,41 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/css/main.css">
   
   <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Bill
+  <header class="title">
+    <h1>Splitter</h1>
+    <img src="/assets/images/logo.svg" alt="Splitter">  
+  </header>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+  <section id="container">
 
-  Number of People
+    <div id="box_one">
 
-  Tip Amount
-  / person
+      <h3 class="subtitle">
+        Conta
+      </h3>
 
-  Total
-  / person
+      <input type="number" id="bill_value" name="bill_value" min="0.00" max="999.999" step="0.01" placeholder="R$ 0,00">
 
-  Reset
+      <h3 class="subtitle">
+        Selecione % de gorjeta
+      </h3>
+
+      <div class="btn_box">
+        <button class="btn">5%</button>
+        <button class="btn">10%</button>
+        <button class="btn">15%</button>
+        <button class="btn">25%</button>
+        <button class="btn">50%</button>
+        <button class="btn">Custom</button>
+
+      </div>
+
+      <h3 class="subtitle">
+        Numero de pessoas
+      </h3>
+
+      <input type="number" id="people_number" name="people_number" min="0" max="999" step="1" placeholder="00">
+      
+
+    </div>
+
+    <div id="box_two">
+
+      <div class="amount subtitle">
+        <label for="">Valor da gorjeta <span class="small_text"> / pessoa </span></label>
+        <input type="number" id="tip_amount" name="tip_amount" min="0" max="999" step="1" placeholder="00">
+      </div>
+
+      <div class="total_person subtitle">
+        <label for="">Valor Total <span class="small_text"> / pessoa </span></label>
+        <input type="number" id="value_total" name="value_total" min="0" max="999" step="1" placeholder="00">
+      </div>
+
+      <div class="btn_box">
+        <button type="reset">Zerar</button>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="foot">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Felipe Lima Developer</a>.
+    </div>
+  </footer>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Felipe Lima Developer</a>.
-  </div>
+
 </body>
 </html>

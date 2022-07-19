@@ -1,0 +1,30 @@
+@import 'components/_reset';
+@import 'components/_colors';
+@import 'components/_body';
+@import 'components/_header';
+@import 'components/_subtitle';
+@import 'components/_btn';
+@import 'components/_input';
+@import 'components/_small-text';
+
+
+@import 'components/_attribution';
+
+
+#container{
+    display: flex;
+    width: 70%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: $White;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(141, 140, 140, 0.247);
+    justify-content: space-around;
+}
+
+#box_two{
+    background-color: $VeryDarkCyan;
+    padding: 30px;
+    border-radius: 20px;
+}
