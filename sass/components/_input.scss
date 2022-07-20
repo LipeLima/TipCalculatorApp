@@ -5,4 +5,28 @@ input{
     font-size: 20px;
     color: $VeryDarkCyan;
     font-weight: 800;
+    background-color: $VeryLightGrayishCyan;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 3% 50%;
+    text-align: right;
+    margin-bottom: 25px;
+
+    &::placeholder{
+        color: $VeryDarkCyan;
+    }
+  
 }
+
+
+#bill_value{
+    background-image: url(/assets/images/icon-dollar.svg);   
+}
+
+#people_number{
+    background-image: url(/assets/images/icon-person.svg);
+}
+
+
+
+

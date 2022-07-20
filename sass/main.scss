@@ -23,7 +23,14 @@
     justify-content: space-around;
 }
 
+#box_one{
+    border: 2px solid red;
+    width: 48%;
+}
+
 #box_two{
+    border: 2px solid blue;
+    width: 48%;
     background-color: $VeryDarkCyan;
     padding: 30px;
     border-radius: 20px;
