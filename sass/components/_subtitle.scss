@@ -2,4 +2,26 @@
     font-size: 14px;
     color: $DarkGrayishCyan;
     margin: 10px 0;
+
+    &.amount,
+    &.total_person{
+        font-size: 12px;
+    }
+
+}
+
+#tip_amount,
+#value_total{
+    background-image: url(/assets/images/icon-dollar.svg);
+    background-size: 17px;
+    color: $primary;
+    background-color: $VeryDarkCyan;
+    color: $primary;
+    font-size: 30px;
+    font-weight: 500;
+    
+
+    &::placeholder{
+        color: $primary;
+    }
 }

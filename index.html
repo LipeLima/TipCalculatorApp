@@ -40,7 +40,7 @@
         <button type="submit" class="btn">15%</button>
         <button type="submit" class="btn">25%</button>
         <button type="submit" class="btn">50%</button>
-        <button type="submit" class="btn">Custom</button>
+        <input type="number" class="btn custom" placeholder="Customizar "></button>
 
       </div>
 
@@ -48,25 +48,25 @@
         Número de pessoas
       </h3>
 
-      <input type="number" id="people_number" name="people_number" min="0" max="999" step="1" placeholder="0">
+      <input type="number" id="people_number" name="people_number" min="0" max="999" step="1" placeholder="0" required title="Não pode estar ZERADO">
       
 
     </div>
 
     <div id="box_two">
 
-      <div class="amount subtitle">
-        <label for="">Valor da gorjeta <span class="small_text"> / pessoa </span></label>
-        <input type="number" id="tip_amount" name="tip_amount" min="0" max="999" step="1" placeholder="00">
+      <div class="amount subtitle result_value">
+        <label for="" class="label_space">Valor da gorjeta <span class="small_text"> <br> / pessoa </span></label>
+        <input type="number" id="tip_amount" class="input_height" name="tip_amount" min="0" max="999" step="1" placeholder="$0.00">
       </div>
 
-      <div class="total_person subtitle">
-        <label for="">Valor Total <span class="small_text"> / pessoa </span></label>
-        <input type="number" id="value_total" name="value_total" min="0" max="999" step="1" placeholder="00">
+      <div class="total_person subtitle result_value">
+        <label for="" class="label_space">Valor Total <span class="small_text"> <br> / pessoa </span></label>
+        <input type="number" id="value_total" class="input_height" name="value_total" min="0" max="999" step="1" placeholder="$0.00">
       </div>
 
       <div class="btn_box">
-        <button type="reset">Zerar</button>
+        <button type="reset">Reset</button>
       </div>
 
     </div>
