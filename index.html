@@ -25,30 +25,32 @@
         Conta
       </h3>
 
-      <div class="input_box">
+      <div id="input_box" class="input_box">
         <input type="number" id="bill_value" name="bill_value" min="0.00" max="999.999" step="0.01" placeholder="0,00">
       </div>
       
 
-      <h3 class="subtitle">
-        Selecione % de gorjeta
-      </h3>
 
-      <div class="btn_box">
-        <button type="submit" class="btn">5%</button>
-        <button type="submit" class="btn">10%</button>
-        <button type="submit" class="btn">15%</button>
-        <button type="submit" class="btn">25%</button>
-        <button type="submit" class="btn">50%</button>
-        <input type="number" class="btn custom" placeholder="Customizar "></button>
-
-      </div>
 
       <h3 class="subtitle">
         Número de pessoas
       </h3>
 
       <input type="number" id="people_number" name="people_number" min="0" max="999" step="1" placeholder="0" required title="Não pode estar ZERADO">
+
+      <h3 class="subtitle">
+        Selecione % de gorjeta
+      </h3>
+
+      <div id="btn_percentage" class="btn_box" >
+        <button onclick="calcular5()" id="5" class="btn" >5%</button>
+        <button onclick="calcular10()" id="10" class="btn">10%</button>
+        <button onclick="calcular15()" id="15" class="btn">15%</button>
+        <button onclick="calcular25()" id="25" class="btn">25%</button>
+        <button onclick="calcular50()" id="50" class="btn">50%</button>
+        <input type="number" onclick="calcularCustom()" id="custom" class="btn custom" placeholder="Editar "></button>
+
+      </div>
       
 
     </div>
@@ -56,17 +58,21 @@
     <div id="box_two">
 
       <div class="amount subtitle result_value">
-        <label for="" class="label_space">Valor da gorjeta <span class="small_text"> <br> / pessoa </span></label>
-        <input type="number" id="tip_amount" class="input_height" name="tip_amount" min="0" max="999" step="1" placeholder="$0.00">
+        <label for="" class="label_space">Valor da gorjeta <span class="small_text"> <br> / Total </span></label>
+       
+        <p id="tip_amount" placeholder="0.00" >0,00</p>
+
       </div>
 
       <div class="total_person subtitle result_value">
-        <label for="" class="label_space">Valor Total <span class="small_text"> <br> / pessoa </span></label>
-        <input type="number" id="value_total" class="input_height" name="value_total" min="0" max="999" step="1" placeholder="$0.00">
+        <label for="" class="label_space">Valor pago <span class="small_text"> <br> / por pessoa </span></label>
+        
+        <p id="value_total" placeholder="0.00">0,00</p>
+
       </div>
 
       <div class="btn_box">
-        <button type="reset">Reset</button>
+        <button type="reset" id="reset" onclick="reset()" class="reset">Resetar</button>
       </div>
 
     </div>
@@ -75,9 +81,11 @@
   <footer id="foot">
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Felipe Lima Developer</a>.
+      Coded by <a href="https://www.linkedin.com/in/felipelimados-santos/" target="_blank">Felipe Lima Developer</a>.
     </div>
   </footer>
+
+  <script src="/scripts.js"></script>
   
 
 </body>

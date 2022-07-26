@@ -31,13 +31,21 @@ body {
 
 #tip_amount,
 #value_total {
-  background-image: url(/assets/images/icon-dollar.svg);
-  background-size: 17px;
-  color: hsl(172deg, 67%, 45%);
+  width: 100%;
+  box-sizing: border-box;
   background-color: hsl(183deg, 100%, 15%);
+  background-image: url(/assets/images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: 10px;
+  background-size: 20px;
+  text-align: right;
+  justify-content: center;
+  align-items: center;
   color: hsl(172deg, 67%, 45%);
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 500;
+  margin-bottom: 20px;
+  padding: 10px;
 }
 #tip_amount::placeholder,
 #value_total::placeholder {
@@ -52,6 +60,8 @@ body {
   margin-right: 15px;
   height: 50px;
   color: hsl(189deg, 41%, 97%);
+  width: 50%;
+  padding-top: 10px;
 }
 
 .input_height {
@@ -59,7 +69,6 @@ body {
 }
 
 .btn_box {
-  border: 1px solid gray;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -67,8 +76,27 @@ body {
   margin-bottom: 50px;
 }
 .btn_box .custom {
+  text-align: center;
   background-color: hsl(189deg, 41%, 97%);
-  color: hsl(184deg, 14%, 56%);
+  color: hsl(183deg, 100%, 15%);
+}
+.btn_box .custom:hover, .btn_box .custom:focus {
+  background-color: hsl(189deg, 41%, 97%);
+  border: 1px solid hsl(183deg, 100%, 15%);
+  color: hsl(183deg, 100%, 15%);
+}
+.btn_box .custom::placeholder {
+  background-color: hsl(189deg, 41%, 97%);
+  color: hsl(183deg, 100%, 15%);
+}
+.btn_box .reset {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+  cursor: pointer;
 }
 
 .btn {
@@ -121,6 +149,34 @@ input::placeholder {
   color: hsl(172deg, 67%, 45%);
 }
 
+#foot {
+  color: rgba(128, 128, 128, 0.644);
+  height: 20px;
+  margin-top: 50px;
+}
+#foot .attribution a {
+  text-decoration: none;
+  color: hsl(186deg, 14%, 43%);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 940px) {
+  #tip_amount,
+#value_total {
+    background-image: none;
+  }
+}
+@media only screen and (max-width: 840px) {
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -142,12 +198,10 @@ input::placeholder {
 }
 
 #box_one {
-  border: 2px solid red;
   width: 48%;
 }
 
 #box_two {
-  border: 2px solid blue;
   width: 48%;
   background-color: hsl(183deg, 100%, 15%);
   padding: 30px;
