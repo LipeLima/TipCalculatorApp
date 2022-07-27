@@ -34,10 +34,6 @@ body {
   width: 100%;
   box-sizing: border-box;
   background-color: hsl(183deg, 100%, 15%);
-  background-image: url(/assets/images/icon-dollar.svg);
-  background-repeat: no-repeat;
-  background-position: 10px;
-  background-size: 20px;
   text-align: right;
   justify-content: center;
   align-items: center;
@@ -149,6 +145,33 @@ input::placeholder {
   color: hsl(172deg, 67%, 45%);
 }
 
+@media (min-width: 375px) and (max-width: 414px) {
+  .title {
+    margin: 10px;
+  }
+  section#container {
+    width: 100%;
+    padding: 20px;
+  }
+}
+@media (max-width: 855px) {
+  div#box_one {
+    width: 100%;
+  }
+  div#box_two {
+    width: 100%;
+  }
+}
+@media (min-width: 855px) {
+  .box_display {
+    border: 1px solid green;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 #foot {
   color: rgba(128, 128, 128, 0.644);
   height: 20px;
@@ -159,24 +182,6 @@ input::placeholder {
   color: hsl(186deg, 14%, 43%);
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 940px) {
-  #tip_amount,
-#value_total {
-    background-image: none;
-  }
-}
-@media only screen and (max-width: 840px) {
-  #container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* Medium devices (landscape tablets, 768px and up) */
-/* Large devices (laptops/desktops, 992px and up) */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -188,7 +193,7 @@ input::placeholder {
 #container {
   display: flex;
   width: 70%;
-  max-width: 1440px;
+  max-width: 1069px;
   margin: 0 auto;
   padding: 50px;
   background-color: hsl(0deg, 0%, 100%);

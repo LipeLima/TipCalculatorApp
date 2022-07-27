@@ -1,62 +1,49 @@
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    
-}
+@media (min-width: 375px) and (max-width: 414px) {
 
-@media only screen and (max-width: 940px) {
-    #tip_amount,
-    #value_total{
-        background-image: none;
+    .title {
+        margin: 10px;
     }
 
-
+    section#container{
+        width: 100%;
+        padding: 20px;
+    }
 }
 
-//PAREI AQUI
-@media only screen and (min-width: 840px) {
-    
-    #container{
-        
-        
-    }
+@media (max-width: 585px) {
 
-    #box_one{
-        display: block;
+   
+}
+
+@media (max-width: 855px) {
+
+    div#box_one{
         width: 100%;
     }
-
-    #box_two{
-        display: block;
-        width: 100%;
+    
+    div#box_two{
+        width: 100%;        
     }
 
-
+   
 }
 
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-  
-
-}
+@media (min-width: 855px) {
 
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
+    .box_display{
+        border: 1px solid green;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
     
+   
+}
+
+@media (max-width: 980px) {
 
 }
 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-
-
-}
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}

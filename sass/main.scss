@@ -7,17 +7,15 @@
 @import 'components/_btn';
 @import 'components/_input';
 @import 'components/_small-text';
-@import 'components/_footer';
 @import 'components/mediaQuerie';
-
-
+@import 'components/_footer';
 @import 'components/_attribution';
 
 
 #container{
     display: flex;
     width: 70%;
-    max-width: 1440px;
+    max-width: 1069px;
     margin: 0 auto;
     padding: 50px;
     background-color: $White;

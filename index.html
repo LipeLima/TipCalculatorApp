@@ -19,63 +19,68 @@
 
   <section id="container">
 
-    <div id="box_one">
+    <div class="box_display">
 
-      <h3 class="subtitle">
-        Conta
-      </h3>
+      <div id="box_one">
 
-      <div id="input_box" class="input_box">
-        <input type="number" id="bill_value" name="bill_value" min="0.00" max="999.999" step="0.01" placeholder="0,00">
-      </div>
-      
-
-
-
-      <h3 class="subtitle">
-        Número de pessoas
-      </h3>
-
-      <input type="number" id="people_number" name="people_number" min="0" max="999" step="1" placeholder="0" required title="Não pode estar ZERADO">
-
-      <h3 class="subtitle">
-        Selecione % de gorjeta
-      </h3>
-
-      <div id="btn_percentage" class="btn_box" >
-        <button onclick="calcular5()" id="5" class="btn" >5%</button>
-        <button onclick="calcular10()" id="10" class="btn">10%</button>
-        <button onclick="calcular15()" id="15" class="btn">15%</button>
-        <button onclick="calcular25()" id="25" class="btn">25%</button>
-        <button onclick="calcular50()" id="50" class="btn">50%</button>
-        <input type="number" onclick="calcularCustom()" id="custom" class="btn custom" placeholder="Editar "></button>
-
-      </div>
-      
-
-    </div>
-
-    <div id="box_two">
-
-      <div class="amount subtitle result_value">
-        <label for="" class="label_space">Valor da gorjeta <span class="small_text"> <br> / Total </span></label>
-       
-        <p id="tip_amount" placeholder="0.00" >0,00</p>
-
-      </div>
-
-      <div class="total_person subtitle result_value">
-        <label for="" class="label_space">Valor pago <span class="small_text"> <br> / por pessoa </span></label>
+        <h3 class="subtitle">
+          Conta
+        </h3>
+  
+        <div id="input_box" class="input_box">
+          <input type="number" id="bill_value" name="bill_value" min="0.00" max="999.999" step="0.01" placeholder="0,00">
+        </div>
         
-        <p id="value_total" placeholder="0.00">0,00</p>
-
+  
+  
+  
+        <h3 class="subtitle">
+          Número de pessoas
+        </h3>
+  
+        <input type="number" id="people_number" name="people_number" min="0" max="999" step="1" placeholder="0" required title="Não pode estar ZERADO">
+  
+        <h3 class="subtitle">
+          Selecione % de gorjeta
+        </h3>
+  
+        <div id="btn_percentage" class="btn_box" >
+          <button onclick="calcular5()" id="5" class="btn" >5%</button>
+          <button onclick="calcular10()" id="10" class="btn">10%</button>
+          <button onclick="calcular15()" id="15" class="btn">15%</button>
+          <button onclick="calcular25()" id="25" class="btn">25%</button>
+          <button onclick="calcular50()" id="50" class="btn">50%</button>
+          <input type="number" onclick="calcularCustom()" id="custom" class="btn custom" placeholder="Editar "></button>
+  
+        </div>
+        
+  
       </div>
-
-      <div class="btn_box">
-        <button type="reset" id="reset" onclick="reset()" class="reset">Resetar</button>
+  
+      <div id="box_two">
+  
+        <div class="amount subtitle result_value">
+          <label for="" class="label_space">Valor da gorjeta <span class="small_text"> <br> / Total </span></label>
+         
+          <p id="tip_amount" placeholder="R$ 0.00" >0,00</p>
+  
+        </div>
+  
+        <div class="total_person subtitle result_value">
+          <label for="" class="label_space">Valor pago <span class="small_text"> <br> / por pessoa </span></label>
+          
+          <p id="value_total" placeholder="R$ 0.00">0,00</p>
+  
+        </div>
+  
+        <div class="btn_box">
+          <button type="reset" id="reset" onclick="reset()" class="reset">Resetar</button>
+        </div>
+  
       </div>
 
     </div>
+    
   </section>
 
   <footer id="foot">

@@ -1,4 +1,3 @@
-botao.addEventListener('click', calcular);
 
 function calcular5(valorConta, numPessoas) {
     var valorConta = document.getElementById('bill_value').value;
@@ -9,8 +8,14 @@ function calcular5(valorConta, numPessoas) {
     if (numPessoas == 0) {
         alert("Número de pessoas não pode estar ZERADO");
     }
-    document.getElementById('tip_amount').innerText = calculo.toFixed(2);
-    document.getElementById('value_total').innerText = (calculo/numPessoas).toFixed(2);
+    document.getElementById('tip_amount').innerText = calculo.toLocaleString("pt-br", {
+        style: "currency",
+        currency: "BRL"
+      });
+    document.getElementById('value_total').innerText = (calculo/numPessoas).toLocaleString("pt-br", {
+        style: "currency",
+        currency: "BRL"
+      });
 }
 
 function calcular10(valorConta, numPessoas) {
@@ -22,8 +27,14 @@ function calcular10(valorConta, numPessoas) {
     if (numPessoas == 0) {
         alert("Número de pessoas não pode estar ZERADO");
     }
-    document.getElementById('tip_amount').innerText = calculo.toFixed(2);
-    document.getElementById('value_total').innerText = (calculo/numPessoas).toFixed(2);
+    document.getElementById('tip_amount').innerText = calculo.toLocaleString("pt-br", {
+        style: "currency",
+        currency: "BRL"
+      });
+    document.getElementById('value_total').innerText = (calculo/numPessoas).toLocaleString("pt-br", {
+        style: "currency",
+        currency: "BRL"
+      });
 }
 
 function calcular15(valorConta, numPessoas) {
@@ -35,8 +46,14 @@ function calcular15(valorConta, numPessoas) {
     if (numPessoas == 0) {
         alert("Número de pessoas não pode estar ZERADO");
     }
-    document.getElementById('tip_amount').innerText = calculo.toFixed(2);
-    document.getElementById('value_total').innerText = (calculo/numPessoas).toFixed(2);
+    document.getElementById('tip_amount').innerText = calculo.toLocaleString("pt-br", {
+        style: "currency",
+        currency: "BRL"
+      });
+    document.getElementById('value_total').innerText = (calculo/numPessoas).toLocaleString("pt-br", {
+        style: "currency",
+        currency: "BRL"
+      });
 }
 
 function calcular25(valorConta, numPessoas) {
@@ -48,8 +65,14 @@ function calcular25(valorConta, numPessoas) {
     if (numPessoas == 0) {
         alert("Número de pessoas não pode estar ZERADO");
     }
-    document.getElementById('tip_amount').innerText = calculo.toFixed(2);
-    document.getElementById('value_total').innerText = (calculo/numPessoas).toFixed(2);
+    document.getElementById('tip_amount').innerText = calculo.toLocaleString("pt-br", {
+        style: "currency",
+        currency: "BRL"
+      });
+    document.getElementById('value_total').innerText = (calculo/numPessoas).toLocaleString("pt-br", {
+        style: "currency",
+        currency: "BRL"
+      });
 }
 
 function calcular50(valorConta, numPessoas) {
@@ -61,8 +84,14 @@ function calcular50(valorConta, numPessoas) {
     if (numPessoas == 0) {
         alert("Número de pessoas não pode estar ZERADO");
     }
-    document.getElementById('tip_amount').innerText = calculo.toFixed(2);
-    document.getElementById('value_total').innerText = (calculo/numPessoas).toFixed(2);
+    document.getElementById('tip_amount').innerText = calculo.toLocaleString("pt-br", {
+        style: "currency",
+        currency: "BRL"
+      });
+    document.getElementById('value_total').innerText = (calculo/numPessoas).toLocaleString("pt-br", {
+        style: "currency",
+        currency: "BRL"
+      });
 }
 
 function calcularCustom(valorConta, numPessoas) {
@@ -75,8 +104,14 @@ function calcularCustom(valorConta, numPessoas) {
     if (numPessoas == 0) {
         alert("Número de pessoas não pode estar ZERADO");
     }
-    document.getElementById('tip_amount').innerText = calculo.toFixed(2);
-    document.getElementById('value_total').innerText = (calculo/numPessoas).toFixed(2);
+    document.getElementById('tip_amount').innerText = calculo.toLocaleString("pt-br", {
+        style: "currency",
+        currency: "BRL"
+      });
+    document.getElementById('value_total').innerText = (calculo/numPessoas).toLocaleString("pt-br", {
+        style: "currency",
+        currency: "BRL"
+      });
 }
 
 function reset() {
