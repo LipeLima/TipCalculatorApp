@@ -32,6 +32,7 @@ body {
 #tip_amount,
 #value_total {
   width: 100%;
+  max-width: 178px;
   box-sizing: border-box;
   background-color: hsl(183deg, 100%, 15%);
   text-align: right;
@@ -164,7 +165,6 @@ input::placeholder {
 }
 @media (min-width: 855px) {
   .box_display {
-    border: 1px solid green;
     margin: 0;
     width: 100%;
     display: flex;

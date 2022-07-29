@@ -1,21 +1,20 @@
-
 function calcular5(valorConta, numPessoas) {
-    var valorConta = document.getElementById('bill_value').value;
-    var numPessoas = document.getElementById('people_number').value;
+  var valorConta = document.getElementById('bill_value').value;
+  var numPessoas = document.getElementById('people_number').value;
 
-    calculo = (valorConta * 5)/100;
+  calculo = (valorConta * 5)/100;
 
-    if (numPessoas == 0) {
-        alert("Número de pessoas não pode estar ZERADO");
-    }
-    document.getElementById('tip_amount').innerText = calculo.toLocaleString("pt-br", {
-        style: "currency",
-        currency: "BRL"
-      });
-    document.getElementById('value_total').innerText = (calculo/numPessoas).toLocaleString("pt-br", {
-        style: "currency",
-        currency: "BRL"
-      });
+  if (numPessoas == 0) {
+      alert("Número de pessoas não pode estar ZERADO");
+  }
+  document.getElementById('tip_amount').innerText = calculo.toLocaleString("pt-br", {
+      style: "currency",
+      currency: "BRL"
+    });
+  document.getElementById('value_total').innerText = (calculo/numPessoas).toLocaleString("pt-br", {
+      style: "currency",
+      currency: "BRL"
+    });
 }
 
 function calcular10(valorConta, numPessoas) {
