@@ -1,4 +1,4 @@
-@media (min-width: 375px) and (max-width: 414px) {
+@media (min-width: 280px) and (max-width: 540px) {
 
     .title {
         margin: 10px;
@@ -10,10 +10,6 @@
     }
 }
 
-@media (max-width: 585px) {
-
-   
-}
 
 @media (max-width: 855px) {
 
@@ -28,22 +24,66 @@
    
 }
 
-@media (min-width: 855px) {
-
+@media (min-width: 720px) {
 
     .box_display{
-        
-        margin: 0;
+        //display: flex;
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
     }
-    
+
+    #box_one{
+        margin-right: 10px;
+    }
    
 }
 
-@media (max-width: 980px) {
 
+@media (min-width: 768px) and (max-width: 912px) {
+
+    
+
+    .title {
+        margin: 10px;
+    }
+
+    section#container{
+        width: 90%;
+        height: 80vh;
+        padding: 20px;
+    }
+
+    .box_display{
+        display: flex;
+        flex-wrap: wrap;
+        height: 50vh;
+    }
 }
+
+@media (min-width: 911px) and (max-width:913px){
+    section#container{   
+        width: 100%;
+        height: 55vh;
+    }
+
+    .box_display{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+    .box_display{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .title{
+        margin: 15px;
+    }
+}
+   
 
