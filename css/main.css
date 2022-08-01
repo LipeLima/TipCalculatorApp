@@ -32,7 +32,7 @@ body {
 #tip_amount,
 #value_total {
   width: 100%;
-  max-width: 178px;
+  max-width: 100%;
   box-sizing: border-box;
   background-color: hsl(183deg, 100%, 15%);
   text-align: right;
